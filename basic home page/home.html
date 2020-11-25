@@ -19,7 +19,7 @@
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/78498a2e01.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
   <!-- Favicon -->
   <link rel="shortcut icon" href="./assets/favicon.ico">
 
@@ -51,7 +51,8 @@
               <a class="nav-link" href="#">Customize Your Pizza</a>
             </li>
           </ul>
-          <a style="margin-right: 20px; margin-left: 15px;" href=""><button type="button" class="d-none d-sm-inline-block btn btn-outline-light btn-lg ml-lg-60 mr-40 mr-lg-0 order-2 order-lg-3 cs-btn"><i class="fa fa-shopping-cart"></i> Cart</button></a>
+          <a style="margin-right: 20px; margin-left: 15px;" href=""><button type="button" class="d-none d-sm-inline-block btn btn-outline-light btn-lg ml-lg-60 mr-40 mr-lg-0 order-2 order-lg-3 cs-btn"><i class="fa fa-shopping-cart"></i>
+              Cart</button></a>
           <a href="sign_up.html"><button type="button" class="d-none d-sm-inline-block btn btn-dark btn-lg ml-lg-60 mr-40 mr-lg-0 order-2 order-lg-3 cs-btn"><i class="fa fa-sign-in"></i> Sign-Up</button></a>
         </div>
       </nav>
@@ -63,16 +64,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto mr-auto">
             <li class="nav-item nav-categories">
-              <a class="nav-link" href="#"><img src="./assets/nav-pizza.png" alt="" style="width: 50px; height: 50px;">PIZZA</a>
+              <a class="nav-link" href="#pizza-menu"><img src="./assets/nav-pizza.png" alt="" style="width: 50px; height: 50px;">PIZZA</a>
             </li>
             <li class="nav-item nav-categories">
-              <a class="nav-link" href="#"><img src="./assets/nav-pasta.png" alt="" style="width: 50px; height: 50px;">PASTA</a>
+              <a class="nav-link" href="#pasta-menu"><img src="./assets/nav-pasta.png" alt="" style="width: 50px; height: 50px;">PASTA</a>
             </li>
             <li class="nav-item nav-categories">
-              <a class="nav-link" href="#"><img src="./assets/nav-sides.png" alt="" style="width: 50px; height: 50px;">SIDES</a>
+              <a class="nav-link" href="#sides-menu"><img src="./assets/nav-sides.png" alt="" style="width: 50px; height: 50px;">SIDES</a>
             </li>
             <li class="nav-item nav-categories">
-              <a class="nav-link" href="#"><img src="./assets/nav-drinks.png" alt="" style="width: 50px; height: 50px;">DRINKS</a>
+              <a class="nav-link" href="#drinks-menu"><img src="./assets/nav-drinks.png" alt="" style="width: 50px; height: 50px;">DRINKS</a>
             </li>
           </ul>
         </div>
@@ -80,25 +81,22 @@
     </div>
   </div>
 
-  <!-- TODO: Insert catchy images for Sliding Carousel. -->
-  <!-- TODO: Customize margin and padding of Sliding Carousel -->
-
   <div>
     <!-- sliding carousel -->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./assets/pp1.jpg" class="d-block w-100" alt="...">
+          <img src="https://m2.alothemes.com/pizzaro/pub/media/magiccart/magicslider/s/l/slide1-demo3.jpg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./assets/pp2.jpg" class="d-block w-100" alt="...">
+          <img src="./assets/carousel-2.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
         <div class="carousel-item">
-          <img src="./assets/pp3.jpg" class="d-block w-100" alt="...">
+          <img src="./assets/carousel-3.png" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
@@ -566,7 +564,71 @@
 
       <p class="partition" style="margin: 20px auto;"></p>
 
-      <!-- TODO: DRINKS MENU HERE -->
+      <!-- TODO: DRINKS MENU REFACTOR -->
+
+      <!-- <section id="drinks-menu" class="menu-box">
+
+        <div id="drinks-menu-div">
+          <div style="float:left">
+            <img src="./assets/nav-drinks.png" alt="" style="width: 40px; height: 40px; margin-right: 8px;">
+          </div>
+          <div style="float:left">
+            <h3>Sides</h3>
+          </div>
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="./assets/sides-french-fries.jpg" height=114.94px width=296.3px>
+              <div class="card-body">
+                <h4 class="card-title">French Fries (Reg)</h4>
+                <p class="card-text">Indulge in a taste of choiciest potatoes and perfect crisp.</p>
+                <p class="pricing">₹ 59</p>
+                <button type="button" class="add-to-cart d-none d-sm-inline-block btn btn-dark btn-lg ml-lg-60 mr-40 mr-lg-0 order-2 order-lg-3 cs-btn" style="color: white; background-color: #bf1818;"><i class="fa fa-shopping-cart"></i>
+                  Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://images.dominos.co.in/potato_cheese_shots.png" alt="sides-cheese-shots-img">
+              <div class="card-body">
+                <h4 class="card-title">Potato Cheese Shots</h4>
+                <p class="card-text">Crisp and golden outside, flavorful burst of cheese, potato & spice inside</p>
+                <p class="pricing">₹ 69</p>
+                <button type="button" class="add-to-cart d-none d-sm-inline-block btn btn-dark btn-lg ml-lg-60 mr-40 mr-lg-0 order-2 order-lg-3 cs-btn" style="color: white; background-color: #bf1818;"><i class="fa fa-shopping-cart"></i>
+                  Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://images.dominos.co.in/Crinkle_Fries.png" alt="sides-crinkle-fries">
+              <div class="card-body">
+                <h4 class="card-title">Crinkle Fries</h4>
+                <p class="card-text">Crispy wavy masala coated fries served with a spicy tomato chilli sauce.
+                <p>
+                <p class="pricing">₹ 69</p>
+                <button type="button" class="add-to-cart d-none d-sm-inline-block btn btn-dark btn-lg ml-lg-60 mr-40 mr-lg-0 order-2 order-lg-3 cs-btn" style="color: white; background-color: #bf1818;"><i class="fa fa-shopping-cart"></i>
+                  Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://images.dominos.co.in/taco.png" alt="sides-taco-mexicana">
+              <div class="card-body">
+                <h4 class="card-title">Taco Mexicana-Veg</h4>
+                <p class="card-text">Truly irresistible! Crispy taco with a delicious veg patty & creamy sauce.</p>
+                <p class="pricing">₹ 79</p>
+                <button type="button" class="add-to-cart d-none d-sm-inline-block btn btn-dark btn-lg ml-lg-60 mr-40 mr-lg-0 order-2 order-lg-3 cs-btn" style="color: white; background-color: #bf1818;"><i class="fa fa-shopping-cart"></i>
+                  Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <p class="partition" style="margin: 20px auto;"></p> -->
+
 
     </section>
 
